@@ -1,0 +1,32 @@
+{
+  "name": "webpack-chunk-path-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.40",
+    "@babel/plugin-syntax-decorators": "7.0.0-beta.40",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.40",
+    "@babel/plugin-transform-classes": "7.0.0-beta.40",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "@babel/preset-react": "7.0.0-beta.40",
+    "babel-loader": "8.0.0-beta.2",
+    "eslint": "4.18.2",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0",
+    "name-all-modules-plugin": "^1.0.1",
+    "react": "16.2.0",
+    "react-dom": "^16.2.0",
+    "react-loadable": "^5.3.1",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "webpack": "4.1.0"
+  }
+}

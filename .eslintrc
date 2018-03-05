@@ -1,0 +1,92 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "React": true,
+    "Component": true,
+    "Fragment": true,
+    "PropTypes": true,
+    "autobind": true,
+    "connect": true,
+    "Link": true,
+    "LocalString": true,
+    "Page": true,
+    "sanityClient": true
+  },
+  "rules": {
+    "max-len": ["warn", { "code": 125 }],
+    "indent": [
+      "error",
+      "tab",
+      {
+        "FunctionDeclaration": {
+          "parameters": "first",
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": "first",
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "SwitchCase": 1
+      }
+    ],
+    "multiline-ternary": ["error", "never"],
+    "linebreak-style": ["error", "unix"],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "err"
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": false,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": ["error", "always"],
+    "no-console": 0,
+    "no-fallthrough": 0,
+    "react/no-unescaped-entities": 0,
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": false,
+        "assignment": true,
+        "arrow": "parens-new-line"
+      }
+    ],
+    "no-extra-parens": [
+      "error",
+      "all",
+      {
+        "ignoreJSX": "multi-line",
+        "returnAssign": true,
+        "enforceForArrowConditionals": false
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"]
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ]
+}
